@@ -42,20 +42,13 @@ contactoLink.addEventListener('click', (event) => {
   document.querySelector(contactoLink.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
 });
 //alerta 
-function mostrarAlertaPersonalizada() {
+function mostrarAlerta() {
     const estilosAlerta = [
-      'background: linear-gradient(#bf3b6c, #f9e8f3)',
-      'border: 1px solid #bf3b6c',
-      'color: #fff',
-      'display: block',
-      'text-align: center',
-      'font-size: 24px',
-      'padding: 10px',
-      'border-radius: 10px',
-      'box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2)'
+      'background: linear-gradient(#C8FFFD, #bf3b6c)',
+      'border: 3px solid #87E6E2',
+      'color: #C8FFFD',
     ];
-    alert('%cEsta es mi presentación personal', estilosAlerta.join(';'));
+    alert('Esta es mi presentación personal');
   }
   
-  // Llamar a la función 
-  mostrarAlertaPersonalizada();
+  mostrarAlerta();
