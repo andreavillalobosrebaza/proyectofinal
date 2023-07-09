@@ -165,6 +165,7 @@ a {
     }
 }
 
+
 /* Media Query para celulares */
 @media (max-width: 767px) {
     main {
@@ -182,11 +183,15 @@ a {
     h1 {
       font-size: 30px;
     }
+    #Inicio {
+       
+        padding-top: 40px;
+    }
   
     .hola {
       text-align: center;
-      padding-top: 70px;
-      padding-bottom: 70px;
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
   }
   
