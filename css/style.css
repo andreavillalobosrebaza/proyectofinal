@@ -1,9 +1,5 @@
-/* En este archivo escriban su CSS */
 
-/* Fonts */
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 body{
     background-color: #fbfbfb;
@@ -34,29 +30,23 @@ h1{
 #logo{
     margin-right: auto;
 }
-/*
-#foto{
-    width:80%;
+
+#foto {
+    width: 40%; 
     height: auto;
     max-width: 300px;
     border-radius: 50%;
     margin-top: 40px;
-
+    margin-right: 20px;
 }
-*/
+
 main{
     max-width: 800px;
     margin:auto; 
     padding-top: 150px;
     padding-bottom: 150px;
 }
-/*
-#Inicio{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-*/
+
 #Hablemos{
     background-color: rgba(175, 89, 158, 0.3);
     margin: 40px;
@@ -64,34 +54,31 @@ main{
     
 
 }
-/*
+
 article{
     padding: 40px 20px;
     text-align: center;
     margin: 20px 0;
 }
-*/
-/*
-.botoncv{
-       
-        border: 1px solid #bf3b6c; 
+
+
+.botoncv {
+    text-align: left; /* Alinear el botón a la izquierda */
+    border: 1px solid #bf3b6c; 
         padding: 10px; 
         background-color: #bf3b6c; 
         color: #fbfbfb; 
         text-decoration: none; 
         font-family: 'Lato', sans-serif; 
         border-radius: 50px; 
-        
 }
-*/
+
 #iconos{
     display:flex; 
     justify-content: space-evenly;
     width: auto;
     align-items: flex-end; 
     height: auto;
-
-    
 }
 
 #icono{
@@ -108,11 +95,19 @@ footer{
     align-items: center;
 }
 
+.hola {
+    flex: 1;
+    padding: 40px 20px;
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 20px;
+}
 
-
-
-
-
+#Inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
 *  cuyos valores asigna por defecto el navegador.
@@ -144,10 +139,24 @@ a {
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
 
+/* Media Query para Desktop */
+@media (min-width: 1024px) {
+    #foto {
+        width: 40%; /* Ajusta el tamaño de la foto según tus necesidades */
+        margin-right: 20px; /* Espacio adicional a la derecha */
+    }
+  
+    .hola {
+        text-align: left; /* Alinea el texto a la derecha en escritorio */
+    }
+  
+    .botoncv {
+        text-align: left; /* Alinea el botón a la derecha en escritorio */
+    }
+}
 
-
-
-
+  
+  
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
 *    "estilos generales". Una buena idea sería comenzar por el <body> ;)
@@ -166,40 +175,8 @@ a {
 *    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
 */
 /*PRUEBAS*/
-#foto {
-    width: 30%; /* Ajusta el tamaño de la foto según tus necesidades */
-    height: auto;
-    max-width: 300px;
-    border-radius: 50%;
-    margin-top: 40px;
-    margin-right: 20px;
-}
 
-.hola {
-    flex: 1;
-    padding: 40px 20px;
-    text-align: left; /* Alinea el texto a la izquierda */
-    margin: 20px;
-}
 
-.botoncv {
-    text-align: left; /* Alinea el botón a la izquierda */
-    border: 1px solid #bf3b6c; 
-        padding: 10px; 
-        background-color: #bf3b6c; 
-        color: #fbfbfb; 
-        text-decoration: none; 
-        font-family: 'Lato', sans-serif; 
-        border-radius: 50px; 
-}
-#Inicio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-article{
-    padding: 40px 20px;
-    text-align: center;
-    margin: 20px 0;
-}
+
+
+
